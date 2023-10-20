@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormPractice_6</title>
+    <style>
+        table , th, td{
+            border: 1px solid black;
+        }
+        /* th, td{
+            background-color: cyan;
+        } */
+        tr{
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table cellpadding="10" cellspacing="0" width="40%">
+            <tr bgcolor="blueviolet">
+                <th colspan="2"><h2>Registration Form</h2></th>
+            </tr>
+
+            <tr bgcolor="#AE8BE7">
+                <th>Enter Name </th>
+                <td><input type="text" name="Enter_name" placeholder="Enter name"></td>
+            </tr>
+
+            <tr bgcolor="#AE8BE7">
+                <th>Enter Password </th>
+                <td><input type="password" name="pass" id=""></td>
+            </tr>
+            <tr bgcolor="#AE8BE7">
+                <th>Enter Address</th>
+                <td><textarea name="Address" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr bgcolor="#AE8BE7">
+                <th>Select Game </th>
+                <td>
+                    <input type="checkbox" name="game" id=""><label for="foot">Football</label><br>
+                    <input type="checkbox" name="game" id=""><label for="Hoc">Hockey</label><br>
+                    <input type="checkbox" name="game" id=""><label for="bad_">Badminton</label><br>
+                    <input type="checkbox" name="game" id=""><label for="Cri_">Cricket</label><br>
+                    <input type="checkbox" name="game" id=""><label for="voll_">Volley Ball</label>
+                </td>
+            </tr>
+
+            <tr bgcolor="#AE8BE7">
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" id=""><label for="Male">Male</label>
+                    <input type="radio" name="gender" id=""><label for="Female">Female</label>
+                </td>
+            </tr>
+
+            <tr bgcolor="#AE8BE7">
+                <th>Selet Ur Age</th>
+                <td>
+                    <select name="age " id="">
+                    <option value="" ></option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">More than 21</option>
+                </select>
+               
+                </td>
+            </tr>
+
+            <tr bgcolor="#AE8BE7">
+                <th>Select Photo</th>
+                <td><input type="file" name="image" id=""></td>
+            </tr>
+            <tr bgcolor="#AE8BE7">
+                <td colspan="2"><button>Click Me</button> &nbsp;
+                <button>Reset</button> &nbsp;
+                <button>Submit Form</button>
+            </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

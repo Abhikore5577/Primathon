@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="SurveyForm.css">
+</head>
+<body>
+    <h1 id="title"> Survey Form</h1>
+<p id="description">Please enter your details</p>
+<hr><br>
+
+<form id="survey-form">
+    <div class="one>"
+
+<label id="name-label">Enter Your Name :</label>
+<input type="text" id="name" required placeholder="Enter Name">
+
+<label id="email-label">Email :</label>
+<input type="email" id="email" required placeholder="Enter Email">
+
+<label id="number-label">Enter Your Mobile Number :</label>
+<input type="number" id="number" required min="1000000000" max="9999999999" placeholder="Enter Mob No">
+</div>
+
+<label> Where you known from :
+<select id="dropdown">
+  
+    <option></option>
+    <option>Facebook</option>
+    <option>Whatsapp</option>
+    <option>Instagram</option>
+    <option>Google</option>
+    
+    </select></label>
+
+<div class="gender">
+<label>Gender :</label>
+<label><input type="radio" value="male" name="gender"> Male </label>
+
+<label><input type="radio" value="female" name="gender"> Female </label>
+</div>
+
+<label> Select Your Education :</label>
+<label><input type="checkbox" value="edu"> SSC </label>
+<label><input type="checkbox" value="edu"> HSC </label>
+<label><input type="checkbox" value="edu"> Diploma </label>
+<label><input type="checkbox" value="edu"> Graduation </label>
+<label><input type="checkbox" value="edu"> Post Graduation </label>
+
+<lable id="feedback"> Feedback :</label>
+<textarea>   
+</textarea>
+
+<button id="submit">Submit</button>
+
+
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 40px 28px 70px;
+}
+.logo img {
+  width: 206px;
+  height: 102px;
+}
+.navbar {
+  display: flex;
+  column-gap: 94px;
+  align-items: center;
+}
+.navbar :nth-of-type(1) {
+  width: 51;
+  height: 28px;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+.navbar :nth-of-type(2) {
+  width: 68px;
+  height: 28px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+.navbar :nth-of-type(3) {
+  width: 32px;
+  height: 28px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+.navbar :nth-of-type(4) {
+  width: 67px;
+  height: 28px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------- */
+.section1 {
+  background-image: url("../Ui_Kit_Food_Delivery_App/Live_Image/Rectangle\ 48.png");
+  width: 100vw;
+  height: 619px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section1 .textwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 73px 250px 48px;
+}
+.section1 .textwrapper div {
+  width: 119px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #fff;
+}
+.section1 .textwrapper h1 {
+  width: 937px;
+  height: 160px;
+  font-family: Poppins;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #fff;
+}
+.section1 .textwrapper p {
+  width: 551px;
+  height: 38px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #fff;
+}
+
+.section1 .buttonwrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 34px;
+}
+.section1 .buttonwrapper :nth-of-type(1) {
+  width: 236px;
+  height: 68px;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  color: #fff;
+  background-color: #fa4a0c;
+  text-align: center;
+}
+.section1 .buttonwrapper :nth-of-type(2) {
+  width: 236px;
+  height: 68px;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+/* ...................................................................................... */
+
+.section2 {
+  display: flex;
+  column-gap: 0px;
+  justify-content: center;
+}
+.section2 .mobImg-1 {
+  position: relative;
+  width: 299px;
+  height: 586px;
+  top: -300px;
+  left: -150px;
+  z-index: 2;
+}
+.section2 .mobImg-2 {
+  position: relative;
+  width: 285px;
+  height: 531px;
+  top: -50px;
+  left: -110px;
+  z-index: 1;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+hr {
+  width: 484px;
+  height: 0px;
+  margin: 0 auto;
+  border: 1px solid #e4e4e4;
+}
+
+/* ............................................................................................ */
+
+.howappwork {
+  width: 425px;
+  height: 36px;
+  font-family: Poppins;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  margin: 72px auto;
+  opacity: 0.8px;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.container .cont1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .cont1 .textwrapper {
+  padding: 250px 20px 300px;
+}
+.container .cont1 .textwrapper h6 {
+  width: 232px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #fa4a0c;
+}
+.container .cont1 .textwrapper h1 {
+  width: 561px;
+  height: 114px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.container .cont1 .textwrapper p {
+  width: 467px;
+  height: 76px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.container .cont2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .cont2 .textwrapper {
+  padding: 250px 20px 300px;
+}
+.container .cont2 .textwrapper h6 {
+  width: 232px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #fa4a0c;
+}
+.container .cont2 .textwrapper h1 {
+  width: 561px;
+  height: 114px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.container .cont2 .textwrapper p {
+  width: 467px;
+  height: 76px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.container .cont3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .cont3 .textwrapper {
+  padding: 250px 20px 300px;
+}
+.container .cont3 .textwrapper h6 {
+  width: 232px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #fa4a0c;
+}
+.container .cont3 .textwrapper h1 {
+  width: 561px;
+  height: 114px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.container .cont3 .textwrapper p {
+  width: 467px;
+  height: 76px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+/* ................................................................................... */
+
+.section3 {
+  width: 100vw;
+  height: 516px;
+  background-image: url("../Ui_Kit_Food_Delivery_App/Live_Image/Rectangle\ 47.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section3 .textwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 170px 250px 48px;
+}
+.section3 .textwrapper div {
+  width: 503px;
+  height: 57px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+
+  color: #fff;
+}
+
+.section3 .textwrapper p {
+  width: 840px;
+  height: 38px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+
+  color: #fff;
+}
+
+.section3 .buttonwrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 34px;
+}
+.section3 .buttonwrapper :nth-of-type(1) {
+  width: 142px;
+  height: 64px;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  border: none;
+
+  color: #fff;
+  background-color: #fa4a0c;
+  text-align: center;
+}
+.section3 .buttonwrapper :nth-of-type(2) {
+  width: 173px;
+  height: 64px;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+/* .................................................................................. */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 54px 115px;
+  gap: 324px;
+}
+
+footer .logo {
+  width: 246;
+  height: 102px;
+}
+footer .media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+footer .link {
+  width: 190px;
+  height: 18px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ...........................Media Query................................................. */
+
+@media screen and (max-width:520px){
+    header .logo,.navbar{
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width:520px){
+    .section1 .textwrapper {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+@media screen and (max-width:520px){
+    .section1 .buttonwrapper{
+       
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+@media screen and (max-width:520px){
+    .container .cont1,.cont2,.cont3{
+       
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+@media screen and (max-width:520px){
+   .section3 .textwrapper,.buttonwrapper{
+       
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}
+@media screen and (max-width:520px){
+   footer .logo,.media,.link{
+       display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}

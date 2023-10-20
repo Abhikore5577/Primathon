@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_6</title>
+    <style>
+        .one{
+            height: 100px;
+                width: 100px;
+                background-color: tomato;
+              margin: 100px auto;
+                
+                animation: box 2s linear infinite;
+                
+        }
+        .two{
+            height: 100px;
+                width: 100px;
+                background-color: tomato;
+              margin: 100px auto;
+                
+                animation: box2 2s linear infinite;
+                
+        }
+        .three{
+            height: 100px;
+                width: 100px;
+                background-color: tomato;
+              margin: 100px auto;
+                
+                animation: box3 2s linear infinite;
+                
+        }
+        @keyframes box{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotateX(360deg);}
+        }
+        @keyframes box2{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotateY(360deg);}
+        }
+        @keyframes box3{
+            0%{rotate: 0deg;}
+            100%{rotate: 360deg;}
+        }
+
+        </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>

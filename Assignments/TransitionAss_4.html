@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TransitionAss_4</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 300px;
+        border: 1px solid black;
+        transition: backgrond-color;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+      .a,
+      .b,
+      .c,
+      .d {
+        margin: auto auto;
+        height: 150px;
+        width: 150px;
+      }
+      .a {
+        background-color: lightcoral;
+        transition-delay: 0s;
+      }
+      .b {
+        background-color: dodgerblue;
+        transition-delay: 1s;
+      }
+      .c {
+        background-color: lime;
+        transition-delay: 2s;
+      }
+      .d {
+        background-color: darkmagenta;
+        transition-delay: 3s;
+      }
+      .a:hover{
+        background-color: brown;
+      }
+      .b:hover{
+        background-color: deeppink;
+      }
+      .c:hover{
+        background-color: navy;
+      }
+      
+      .d:hover{
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+    </div>
+  </body>
+</html>

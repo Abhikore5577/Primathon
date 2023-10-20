@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_2</title>
+    <style>
+        *{
+            margin: 100px auto;
+        }
+    .one,.two,.three{
+        height: 20px;
+            width: 20px;
+            display: inline-block;
+            position: relative;
+    }
+        .one{
+            
+            background-color: lime;
+           
+            animation: mymove 1s 0.1s infinite;
+            left: 40%;
+        }
+        .two{
+           
+            background-color: lightcoral;
+            
+            animation: mymove2 1s 0.2s infinite;
+            left: 40%;}
+        .three{
+            
+            background-color: lightseagreen;
+            
+            animation: mymove3 1s 0.3s infinite;
+            left: 40%;
+        }
+
+        @keyframes mymove{
+            0% {
+                top: 0;
+                background-color: rgb(236, 214, 214);
+            }
+            50%{
+                top: 50px;
+                background-color: dodgerblue;
+            }
+            100%{
+                top: 0;
+                background-color:  rgb(236, 214, 214);
+            }}
+        @keyframes mymove2{
+            0% {
+                top: 0;
+                background-color: rgb(236, 214, 214);
+            }
+            50%{
+                top: 50px;
+                background-color: dodgerblue;}
+            100%{
+                top: 0;
+                background-color:  rgb(236, 214, 214);
+            }}
+        @keyframes mymove3{
+            0% {
+                top: 0;
+                background-color:  rgb(236, 214, 214);
+            }
+            50%{
+                top: 50px;
+                background-color: dodgerblue;
+            }
+            100%{
+                top: 0;
+                background-color:  rgb(236, 214, 214);
+            }}
+    </style>
+<body>
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>  
+</body>
+</html>

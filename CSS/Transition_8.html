@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition_8</title>
+    <style>
+        .trans{
+            height: 100px;
+            width: 400px;
+            background-color: dodgerblue;
+            border-radius: 40px;
+            font-size: 2em;
+            text-align: center;
+            margin: 0 auto;
+            transition-property:background-color,border-radius ;
+            transition-duration: 2s, 5s;
+            color: white;
+        }
+        .trans:hover{
+            background-color: lightcoral;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="trans">Primathon</div>
+</body>
+</html>

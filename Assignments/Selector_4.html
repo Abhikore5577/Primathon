@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector_4</title>
+    <style>
+        .mandetory label::after{
+            content: "*";
+            color: red;
+        }
+        ::placeholder{
+            color: rgb(227, 58, 58, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="mandetory">
+        <label for="name">Name</label>: <input type="text" placeholder="Enter Name">
+    </div>
+</body>
+</html>

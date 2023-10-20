@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primathon</title>
+    <style>
+      *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .nav {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: -15px;
+        padding: 10px;
+        width: 50%;
+      }
+      .nav ul li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 1.5em;
+        
+      }
+      .nav ul li a{
+        text-decoration: none;
+        color: black;
+      }
+      .nav button{
+        font-size: 0.8em;
+        padding: 0.2em;
+        background-color: lightseagreen;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+      }
+      .nav button select{
+        width: 25%;
+        background-color: lightseagreen;
+      }
+
+      .logo img {
+        width: 150px;
+        height: 70px;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: lightseagreen;
+      }
+      .container h1 {
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        font-size: 3em;
+      }
+      .container .data {
+        padding: 6em;
+      }
+      .container p {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+      }
+      .container button {
+        display: inline-block;
+        width: 10%;
+        font-size: 1.2em;
+      }
+      .one {
+        position: absolute;
+        left: 39%;
+        padding: 10px;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 0.4em;
+        color: lightseagreen;
+      }
+      .two {
+        position: absolute;
+        right: 39%;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 0.4em;
+        background-color: lightseagreen;
+        color: white;
+      }
+      .box1 h1 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 4em;
+      }
+      .p1 {
+        text-align: center;
+        font-size: 1.2em;
+      }
+      .box2 {
+        position: relative;
+        left: 0.8em;
+      }
+      .box2 a{
+        text-decoration: none;
+      }
+      .p2 {
+        font-size: 2em;
+        color: lightseagreen;
+      }
+      .p3 {
+        background-image: url("https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(26998)/2029510-Interview__Preparation.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10em;
+        width: 16em;
+      }
+      .p4 {
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 0.5em;
+        margin: 0;
+      }
+      .p6 {
+        font-size: 1.7em;
+        font-weight: bold;
+        line-height: 0.5em;
+        margin: 0;
+      }
+      .three {
+        padding: 0.7em;
+        width: 10em;
+        position: relative;
+        left: 45%;
+        top: 150px;
+        font-size: 1em;
+        background-color: lightseagreen;
+        color: white;
+        border: 1px solid white;
+        border-radius: 0.5em;
+        margin-bottom: 20%;
+      }
+      .three a{
+        text-decoration: none;
+      }
+      .p7 {
+        font-size: 2em;
+        color: lightseagreen;
+        position: relative;
+        left: 0.8em;
+      }
+      .fed {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-around;
+        column-gap: 30px;
+        flex-wrap: wrap;
+      }
+      .fed1 {
+        background-image: url("https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(21650)/1776830-PA_C-04.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .fed2 {
+        background-image: url("https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(25753)/1966533-Introduction_to__Computer_Science_(1).png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .fed3 {
+        background-image: url("https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(26998)/2029510-Interview__Preparation.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .fed1,
+      .fed2,
+      .fed3,
+      .fed4,
+      .fed5,
+      .fed6 {
+        width: 18em;
+        height: 10em;
+        border: 1px solid white;
+        border-radius: 0.5em;
+      }
+      .p8 {
+        font-size: 2em;
+        color: lightseagreen;
+        position: relative;
+        left: 0.8em;
+      }
+      .web {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        column-gap: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .web1,
+      .web2,
+      .web3,
+      .web4,
+      .web5,
+      .web6,
+      .web7,
+      .web8 {
+        width: 18em;
+        height: 10em;
+        border: 1px solid white;
+        border-radius: 0.5em;
+      }
+      .web1 {
+        background-image: url("https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(30283)/2150176-Learn__Web_Development_Wbinar_LMS_(2).png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .web2 {
+        background-image: url("https://edmingle.b-cdn.net/edmingle_websitebuilder/course-default.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .web3 {
+        background-image: url("https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(27043)/2030453-webinar_R_21.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .web4 {
+        background-image: url("https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(26028)/1980733-webinar_R_19_(2).png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .webinar{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        column-gap: 31px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .webinar1 {
+        background-image: url('https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(25550)/1948936-Front-End_Developer.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .webinar2 {
+        background-image: url('https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(25283)/1948935-JS.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .webinar3 {
+        background-image: url('https://dme2wmiz2suov.cloudfront.net/User(89196003)/CourseBundles(25549)/1948933-Front-End_Developer__in_3_month.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .webinar1, .webinar2, .webinar3, .webinar4, .webinar5, .webinar6{
+        width: 18em;
+        height: 10em;
+        border: 1px solid white;
+        border-radius: 0.5em;
+      }
+      .aside{
+        display: flex;
+        width: 100%;
+        background-color:rgb(243, 249, 249);
+      }
+      .aside1, .aside2{
+       
+        width: 50%;
+        height: 90vh;
+      }
+      .aside1{
+       padding:  3em;
+       text-align: center;
+      }
+      .aside1 h1{
+        font-size: 3.5em;
+      }
+      .aside1 p{
+        font-size: 2em;
+      }
+      .aside1 .one{
+        position: relative;
+        left: 20px;
+        padding: 10px;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 0.4em;
+        background-color: lightseagreen;
+        color: white;
+        font-size: 1.5em;
+        
+      }
+      .aside1 .two{
+        position: relative;
+        left: 50px;
+        padding: 10px;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 0.4em;
+        color: lightseagreen;
+        font-size: 1.5em;
+        
+      }
+      .aside2{
+        background-image: url('https://edmingle.b-cdn.net/edmingle_websitebuilder/sitebuilder/assets/designs/images/edmingle/meeting-clipped.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .form{
+        display: flex;
+        width: 100%;
+        
+        
+      }
+      .form1, .form2{
+        width: 50%;
+        height: 90vh;
+        
+      }
+      
+      .form1 h1{
+        padding: 5em 5em 0em 0.8em;
+        font-size: 2.5em;
+      }
+      .form1 p{
+        font-size: 1.5em;
+        padding: 0em 5em 5em 1em;
+      }
+      .form2 form{
+        width: 70%;
+        padding: 0.5rem;
+        border: 1px solid green;
+        box-shadow: 0 0 50px 1px  gray;
+        border-radius: 0.8em;
+        margin: 0em 0em 0em 6em;
+       
+      }
+      .form2 form input , textarea{
+        padding: 0.8em;
+        width: 90%;
+        margin: 1em;
+        border-radius: 10px;
+      }
+      .form2 button{
+        padding: 0.8em;
+        width: 90%;
+        margin: 1em ;
+        border-radius: 10px;
+        background-color: lightseagreen;
+        color: white;
+      }
+      .section{
+        display: flex;
+        width: 100vw;
+        height: 50vh;
+        background-color: lightseagreen;
+        justify-content: space-around;
+      }
+      .sec1, .sec2, .sec3, .sec4{
+        height: 50vh;
+        width: 25%;
+       color: white;
+        padding: 4em;
+      }
+      footer{
+        width: 98%;
+        height: 15vh;
+        background-color: gray;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        padding: 2em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <span class="logo"
+      ><a href="https://learn.primathonacademy.com/" target="_blank"><img
+        src="https://dme2wmiz2suov.cloudfront.net/Institution(3719)/Logo/1780743-logo.png"
+        alt=""
+    /></a></span>
+    <div class="nav">
+      <ul>
+        <li><a href="https://learn.primathonacademy.com/courses" target="_blank">Courses</a></li>
+        <li><a href="https://learn.primathonacademy.com/contact-us" target="_blank">Contact Us</a></li>
+        <li>
+          <button>
+            <a href="https://learn.primathonacademy.com/myaccount/" target="_blank">My Account</a>
+            <select name="" id="">
+              <option value=""></option>
+              <option value="Logout">Logout</option>
+            </select>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="data">
+        <h1>First Step Towards Your Career</h1>
+        <p>
+          You’ve made a step towards reforming your career and your career guide
+          is here for you. In this ever-growing field of opportunities, it’s
+          your time to take a dive in and see yourself achieve wonders.
+        </p>
+        <p>Login to start/resume your coding journey</p>
+        <button class="one" >Get Started</button>
+        <button class="two" >Get Started</button>
+      </div>
+    </div>
+
+    <div class="box1">
+      <h1>Did You Know?</h1>
+      <p class="p1">
+        The IT sector accounts for 9.3% of India’s GDP. It was one of the
+        sectors that didn’t suffer even during the pandemic and even grew during
+        those times.
+      </p>
+    </div>
+    <div class="box2">
+      <p class="p2">Backend Web Development</p>
+      <a href="https://learn.primathonacademy.com/course/InterviewPreparation-48154" target="_blank"><div class="p3"></div>
+      <p class="p4">Interview Preparation</p>
+      <p class="p5">Super Admin</p>
+      <p class="p6">Rs 4999</p></a>
+    </div>
+
+    <button class="three"><a href="https://learn.primathonacademy.com/courses?categories_ids=5131" target="_blank">See All Courses</a></button>
+    <p class="p7">Frontend Web Development</p>
+
+    <div class="fed">
+      <div class="fed1"></div>
+
+      <div class="fed2"></div>
+
+      <div class="fed3"></div>
+
+      <div class="fed4">
+        <p
+          style="
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1em;
+            margin: 0;
+          "
+        >
+          React Web Development
+        </p>
+
+        <p>Super Admin</p>
+
+        <p
+          style="
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 0.5em;
+            margin: 0;
+          "
+        >
+          ₹45000
+        </p>
+      </div>
+
+      <div class="fed5">
+        <p
+          style="
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1em;
+            margin: 0;
+          "
+        >
+          Introduction to Computer Fundamentals
+        </p>
+
+        <p>Super Admin</p>
+
+        <p
+          style="
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 0.5em;
+            margin: 0;
+          "
+        >
+          FREE
+        </p>
+      </div>
+
+      <div class="fed6">
+        <p
+          style="
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1em;
+            margin: 0;
+          "
+        >
+          Interview Preparation
+        </p>
+
+        <p>Super Admin</p>
+
+        <p
+          style="
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 0.5em;
+            margin: 0;
+          "
+        >
+          ₹4999
+        </p>
+      </div>
+    </div>
+
+    <button class="three">See All Courses</button>
+
+    <p class="p8">Webinar</p>
+    <div class="web">
+      <div class="web1"></div>
+
+      <div class="web2"></div>
+
+      <div class="web3"></div>
+
+      <div class="web4"></div>
+   
+
+    <div class="web5">
+      <p
+        style="font-size: 1.5em; font-weight: bold; line-height: 1em; margin: 0"
+      >
+      Roadmap: From College to Industry
+      </p>
+
+      <p>Super Admin</p>
+
+      <p
+        style="
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.5em;
+          margin: 0;
+        "
+      >
+        Free
+      </p>
+    </div>
+
+    <div class="web6">
+      <p
+        style="font-size: 1.5em; font-weight: bold; line-height: 1em; margin: 0"
+      >
+      Learn web development in 1 hour
+      </p>
+
+      <p>Super Admin</p>
+
+      <p
+        style="
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.5em;
+          margin: 0;
+        "
+      >
+       Free
+      </p>
+    </div>
+
+    <div class="web7">
+      <p
+        style="font-size: 1.5em; font-weight: bold; line-height: 1em; margin: 0"
+      >
+      Learn JavaScript Concept
+      </p>
+
+      <p>Super Admin</p>
+
+      <p
+        style="
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.5em;
+          margin: 0;
+        "
+      >
+       Free
+      </p>
+    </div>
+
+    <div class="web8">
+      <p
+        style="font-size: 1.5em; font-weight: bold; line-height: 1em; margin: 0"
+      >
+      Learn Git and Git Repository in 1 hour
+      </p>
+
+      <p>Super Admin</p>
+
+      <p
+        style="
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.5em;
+          margin: 0;
+        "
+      >
+       Free
+      </p>
+    </div>
+  </div>
+
+  <div class="webinar">
+    <div class="webinar1"></div>
+
+    <div class="webinar2"></div>
+
+    <div class="webinar3"></div>
+
+    <div class="webinar4">
+      <p
+        style="font-size: 1.5em; font-weight: bold; line-height: 1em; margin: 0"
+      >
+     Guide to Become Front-End Developer
+      </p>
+
+      <p>Super Admin</p>
+
+      <p
+        style="
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.5em;
+          margin: 0;
+        "
+      >
+        Free
+      </p>
+    </div>
+
+    <div class="webinar5">
+      <p
+        style="font-size: 1.5em; font-weight: bold; line-height: 1em; margin: 0"
+      >
+      Webinar on JavaScript Interview Questions
+      </p>
+
+      <p>Dr Abdul Basit PhD</p>
+
+      <p
+        style="
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.5em;
+          margin: 0;
+        "
+      >
+       Free
+      </p>
+    </div>
+
+    <div class="webinar6">
+      <p
+        style="font-size: 1.5em; font-weight: bold; line-height: 1em; margin: 0"
+      >
+      Roadmap to Become Front-End Developer
+      </p>
+
+      <p>Super Admin</p>
+
+      <p
+        style="
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.5em;
+          margin: 0;
+        "
+      >
+       Free
+      </p>
+    </div>
+    </div>
+
+    <button class="three">See All Courses</button>
+
+    <div class="aside">
+      <div class="aside1">
+        <h1>It’s Not Too Late, It’s Never Too Late</h1>
+        <p>It’s never too late to start your career in coding. Coding is a skill that has no boundaries of age and you’re a part of the IT revolution Now.
+
+          Break the stereotypes and login your way towards a better Future.</p>
+          <button class="one" >Get Started</button>
+        <button class="two" >Get Started</button>
+      </div>
+      <div class="aside2"></div>
+    </div>
+
+
+    <div class="form">
+      <div class="form1">
+        <h1>It’s Your Time To Be A Big Shot Of The Tech Industry</h1>
+        <p>Our course is tailored to your needs, just the way you want it. Start learning and never look back!</p>
+      </div>
+      <div class="form2">
+        <form action="">
+          <input type="text" name="fname" id="" placeholder="Enter your first name">
+          <input type="text" name="lname" id="" placeholder="Enter your last name">
+          <input type="email" name="email" id="" placeholder="Enter your email ID">
+          <input type="number" name="monum" id="" placeholder="Enter your mobile number">
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sec1">
+        <h1>Get in touch</h1>
+        <p>We love to hear from you. Our friendly team is always here to chat.</p>
+      </div>
+      <div class="sec2">
+        <h1>Chat to us</h1>
+        <p>Our friendly team is here to help.</p>
+        <h4>hello@primathonacademy.com</h4>
+      </div>
+      <div class="sec3">
+        <h1>Office</h1>
+        <p>
+          Say hello at our office.</p>
+        <h4>
+          
+          Plot no.108, Sector 44, Gurgram,
+          
+           Haryana - 122011, India.</h4>
+      </div>
+      <div class="sec4">
+        <h1>Phone</h1>
+        <p>Mon - Fri from 9 am to 6 pm.</p>
+        <h4>+91 8950933267</h4>
+      </div>
+    </div>
+    <footer>
+      <p>Courses &nbsp; &nbsp;<span>Contact Us</span></p>
+      <p>© 2023 Primathon Academy</p>
+    </footer>
+  </body>
+</html>

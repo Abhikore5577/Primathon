@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition_4</title>
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            color: white;
+           transition-property: width ;
+           transition-duration: 5s;
+        }
+        #div1{
+            transition-timing-function: cubic-bezier(0,0,1,1);font-size: 20px;margin-bottom: 20px;
+        }
+        #div2{
+            transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);font-size: 20px;margin-bottom: 20px;
+        }
+        #div3{
+            transition-timing-function: cubic-bezier(0.42,0,1,1);font-size: 20px;margin-bottom: 20px;
+        }
+        #div4{
+            transition-timing-function: cubic-bezier(0,0,0.58,1);font-size: 20px;margin-bottom: 20px;
+        }
+        #div5{
+            transition-timing-function: cubic-bezier(0.42,0,0.58,1);font-size: 20px;margin-bottom: 20px;
+        }
+        div:hover{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+</body>
+</html>

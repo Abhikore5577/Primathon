@@ -1,0 +1,41 @@
+h1,p{
+    text-align:center;
+  }
+  body{
+    background-color:black;
+    color:white;
+    margin:40%;
+    padding:1em auto;
+    font-family:cursive;
+    
+  }
+  .one ,input, select,textarea{
+    width:100%;
+    margin:10px 0px;
+    border-radius:5px;
+    padding:5px;
+    
+  }
+  hr{
+    width:80%;
+  
+  }
+  .gender input{
+   width:unset;
+   margin:10px;  
+  }
+  input[type="checkbox"]{
+  width:10%;
+  }
+  label{
+    display:block;
+  }
+  button{
+    display:block;
+    height:2em;
+    width:50%;
+    margin: 1rem auto;
+    font-family:cursive;
+    font-size:1em;
+  }
+  

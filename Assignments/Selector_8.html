@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector_8</title>
+    <style>
+        .intro{
+           font-size: 25px;
+           border: 2px solid black;}
+        .intro p em{
+            color: red;
+        }
+         p em{
+            color: red;
+        }
+    :nth-of-type(2){
+            background-color: rgb(234, 171, 126);
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <p>This is the <em>first</em> paragraph</p>
+        <p>This is an <em>imporatant</em> paragraph inside the intro div</p>
+    </div>
+    <p>This is regular paragraph</p>
+    <p>This is an <em>imporatant</em> paragraph that is not in the intro div</p>
+</body>
+</html>

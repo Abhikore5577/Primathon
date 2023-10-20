@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitionAss_3</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 90%;
+            border: 1px solid grey;
+            padding: 15px;
+            margin: 0 auto;
+            transition-property:background-color  ;
+            transition-timing-function:ease ;
+            transition-timing-function:steps(4, end) ;
+            transition-timing-function:cubic-bezier(1,-1,1,0.5) ;
+        }
+        .box{
+            height: 300px;
+            width: 25%;
+            background-color: yellow;
+            border-radius: 30px;
+        }
+        .container :hover{
+            background-color: green;
+            /* margin-left: 75%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

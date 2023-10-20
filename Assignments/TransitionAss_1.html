@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitionAss_1</title>
+    <style>
+        .outerspace img{
+            position: relative;
+           
+            height: 100vh;
+            width:100vw;
+
+        }
+        .rocket{
+            /* background: url('https://giffiles.alphacoders.com/577/57700.gif'); */
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            transition: 8s ease-out;
+
+        }
+        .rocket:hover{
+            /* transform: rotate(-90deg); */
+            transform:rotate(-70deg) translate(600px, 500px)
+        }
+    </style>
+</head>
+<body>
+    <div class="outerspace"><img src="../Image/istockphoto-178149253-170667a.webp" alt=""></div>
+    <div class="rocket"><img src="https://giffiles.alphacoders.com/577/57700.gif" alt=""></div>
+</body>
+</html>

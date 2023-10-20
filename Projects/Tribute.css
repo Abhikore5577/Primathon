@@ -1,0 +1,66 @@
+*{
+    background-color:black;
+    color:white;
+    
+  }
+  #image{
+    display:block;
+    max-width:100%;
+    margin:0 auto;
+    height:30em
+    }
+  #title{
+    text-align:center;
+    font-size:400%;
+    font-weight:bold;
+    font-family:tahoma;
+    margin:2em;
+    animation: bounce2 1s linear infinite;
+  }
+  /* @keyframes flash {
+    from { transform: scale(0.5); }
+    to { transform: scale(1.2); }
+  } */
+  /* @keyframes flash{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+  } */
+  @keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-45px);}
+    60% {transform: translateY(-30px);}
+  }
+  
+  #img-caption{
+    font-size:300%;
+    font-weight:bold;
+    font-family:tahoma;
+    padding:0.5em;
+     
+  }
+  #life{
+     font-variant: small-caps;
+      font-family:tahoma;
+    padding:1em;
+    font-size:150%;
+    line-height:1.5em;
+  }
+  #tribute-info{
+    font-size:300%;
+    font-weight:bold;
+    font-family:tahoma;
+    padding:0.5em;
+  }
+  #work{
+    font-variant: small-caps;
+      font-family:tahoma;
+    padding:1em;
+    font-size:150%;
+    line-height:1.5em;
+  }
+  a{
+    display:block;
+    margin:0.3em;
+   position:relative;
+   left:1em;
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediaQueryAss_2</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100vw;
+      }
+      div {
+        height: 200px;
+        width: 49vw;
+      }
+      .one {
+        background-color: lightcoral;
+      }
+      .two {
+        background-color: dodgerblue;
+      }
+      .three {
+        background-color: limegreen;
+      }
+      .four {
+        background-color: lightsalmon;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one"><h1>Column 1</h1></div>
+      <div class="two"><h1>Column 2</h1></div>
+      <div class="three"><h1>Column 3</h1></div>
+      <div class="four"><h1>Column 4</h1></div>
+    </div>
+  </body>
+</html>
