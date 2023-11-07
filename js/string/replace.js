@@ -1,3 +1,3 @@
 let str="Hello World ";
 
-console.log(str.replace("l", "5"))
+console.log(str.replace("l", "5"));
