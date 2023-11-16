@@ -8,3 +8,11 @@ function arraySum(i, arr){
     return arr[i]+ arraySum(i+1, arr)
 }
 console.log(arraySum(0, arr))
+
+
+function anotherMethodSum(num1, num2){
+    return num1+num2;
+}
+
+result=arr.reduce(anotherMethodSum);
+console.log(result)

@@ -1,9 +1,8 @@
 //reduce method
 
-
-
-function sumArray(...args){
-     return args.reduce((result, num)=>result+num)
+function sumArray(result, num){
+    return result+num;
 }
 
-console.log(sumArray[150,100,50])
+let arr=[150,50,100,200]
+console.log(arr.reduce(sumArray))
