@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.javascripttutorial.net" target="_blank" name="javascript"
+ id="js">JavaScript Tutorial
+</a>
+
+<script>
+let anchor=document.querySelector('#js')
+if(anchor){
+    anchor.removeAttribute('name')
+    console.log(anchor.getAttribute('name'))
+}
+</script>
+</body>
+</html>

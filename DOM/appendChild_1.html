@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+    </ul>
+    <script>
+        function createMenuitem(name){
+            let li=document.createElement('li')
+            li.textContent=name;
+            return li;
+        }
+         let menu=document.querySelector('#menu')
+
+         menu.appendChild(createMenuitem('Home'))
+         menu.appendChild(createMenuitem('Services'))
+         menu.appendChild(createMenuitem('About'))
+         menu.appendChild(createMenuitem('Contact us'))
+
+    </script>
+</body>
+</html>
