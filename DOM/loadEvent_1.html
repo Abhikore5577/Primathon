@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    window.addEventListener('load', ()=>{
+        let logo=document.createElement('img')
+
+        logo.addEventListener('load', (event)=>{
+            console.log('logo has been loaded')
+        })
+        document.body.appendChild(logo)
+        logo.src="../Image/360_F_113998820_PyE7Xqaaruarcp1VZFckSpbUG9jFVaol.jpg"
+
+    })
+ </script>   
+</body>
+</html>

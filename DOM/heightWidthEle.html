@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="width:100px;height:150px;border:solid 1px #000;padding:10px"></div>
+<script>
+    let div=document.querySelector('.box')
+    // let width=div.offsetWidth;
+    // let height=div.offsetHeight;
+
+    // let width=div.clientWidth;
+    // let height=div.clientHeight
+    // console.log({width,height})
+
+    // let domReact=div.getBoundingClientRect()
+    // console.log(domReact)
+
+    let style=getComputedStyle(div)
+
+    let borderTopwidth=parseInt(style.borderTopWidth)
+    let borderBottomWidth=parseInt(style.borderBottomWidth)
+    let borderLeftWidth=parseInt(style.borderLeftWidth)
+    let borderRightWidth=parseInt(style.borderRightWidth)
+</script>
+</body>
+</html>
